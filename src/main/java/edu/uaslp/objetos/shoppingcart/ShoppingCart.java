@@ -8,7 +8,6 @@ public class ShoppingCart {
     List<Item> itemsList = new LinkedList<>();
     BigDecimal totalCost= BigDecimal.ZERO;;
     public boolean isEmpty() {
-        //return itemsList.size() == 0;
         return itemsList.size() == 0;
     }
 
