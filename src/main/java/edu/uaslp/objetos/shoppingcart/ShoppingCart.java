@@ -20,7 +20,6 @@ public class ShoppingCart {
 
     public void addItem(Item item){
         itemsList.add(item);
-        //throw new InvalidDataException("Null or empty string not allowed for item code");
     }
 
     public int getItemsCount() {
