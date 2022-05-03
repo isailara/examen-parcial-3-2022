@@ -6,7 +6,8 @@ import java.util.List;
 
 public class ShoppingCart {
     List<Item> itemsList = new LinkedList<>();
-    BigDecimal totalCost= BigDecimal.ZERO;;
+    BigDecimal totalCost= BigDecimal.ZERO;
+    int itemsCount;
     public boolean isEmpty() {
         return itemsList.size() == 0;
     }
@@ -20,10 +21,11 @@ public class ShoppingCart {
 
     public void addItem(Item item){
         itemsList.add(item);
+        itemsCount++;
     }
 
     public int getItemsCount() {
-        int itemsCount = itemsList.size();
+        //itemsCount = itemsList.size();
         return itemsCount;
     }
 
